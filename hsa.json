@@ -1,0 +1,40 @@
+{
+    "coord": {
+        "lon": 37.76,
+        "lat": 55.61
+    },
+    "weather": [{
+        "id": 800,
+        "main": "Clear",
+        "description": "clear sky",
+        "icon": "01n"
+    }],
+    "base": "stations",
+    "main": {
+        "temp": 283.41,
+        "pressure": 1018,
+        "humidity": 87,
+        "temp_min": 282.15,
+        "temp_max": 284.15
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3,
+        "deg": 240
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1505844000,
+    "sys": {
+        "type": 1,
+        "id": 7325,
+        "message": 0.0397,
+        "country": "RU",
+        "sunrise": 1505790599,
+        "sunset": 1505835224
+    },
+    "id": 461835,
+    "name": "Zyablikovo",
+    "cod": 200
+}
