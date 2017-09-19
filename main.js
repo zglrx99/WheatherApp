@@ -16,7 +16,7 @@ function CreateURLRequest(location) {
 $(document).ready(function () {
     $('button').click(function () {
         if (URL == '') {
-            $('.main').html('<h3>We couldn\'t show anything cause you didn\'t allow get your geolocation</h3>');
+            $('.main').html('<div class="jumbotron jumbotron-fluid"><div class="container"><h1>We couldn\'t show anything cause you didn\'t allow get your geolocation</h1></div></div>');
         } else {
             $('button').css('display', 'none');
             sendWeatherRequest(URL);
@@ -46,8 +46,8 @@ function showWeatherInfo(weatherData) {
         temperature = weatherData.main.temp || 'Data doesn\'t catched',
         icon = '<img src="http://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png" />';
     $(document).ready(function () {
-        $('#city').html('Location: ' + city);
-        $('.lead').html(icon);
-        $('.temperature').html('Celsium: ' + Math.round(temperature - 273.15));
+        $('#city').addClass('animated zoomInDown').html('Location: ' + city);
+        $('.lead').addClass('animated zoomInDown').html(icon);
+        $('.temperature').addClass('animated zoomInDown').html('Celsium = ' + Math.round(temperature - 273.15) + '<hr class="my-4">' + 'Fahrenheit = ' + Math.round(temperature * 9 / 5 - 459.67));
     });
 }
